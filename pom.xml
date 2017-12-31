@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.progressoft.birx.domino</groupId>
-  <artifactId>gwt-datetime</artifactId>
+  <artifactId>gwt-i18n</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -91,7 +91,7 @@
     </pluginManagement>
   </build>
   <modules>
-    <module>gwt-datetime-client</module>
-    <module>gwt-datetime-server</module>
+    <module>gwt-i18n-client</module>
+    <module>gwt-i18n-server</module>
   </modules>
 </project>
