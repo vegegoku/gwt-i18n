@@ -67,6 +67,11 @@
           <configuration>
             <sourceLevel>1.8</sourceLevel>
             <failOnError>true</failOnError>
+            <useCompilerArgsForTests>true</useCompilerArgsForTests>
+            <compilerArgs>
+              <compilerArg>-gen</compilerArg>
+              <compilerArg>/mnt/CODE/TEMP</compilerArg>
+            </compilerArgs>
           </configuration>
         </plugin>
         <plugin>

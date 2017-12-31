@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>gwt-i18n-client</artifactId>
-  <packaging>gwt-app</packaging>
+  <packaging>gwt-lib</packaging>
 
   <dependencies>
     <dependency>
@@ -49,7 +49,12 @@
         <configuration>
           <moduleName>com.progressoft.brix.domino.i18n.I18n</moduleName>
           <moduleShortName>gwti18n</moduleShortName>
-          <skipTests>true</skipTests>
+          <!--<skipTests>true</skipTests>-->
+          <useCompilerArgsForTests>true</useCompilerArgsForTests>
+          <compilerArgs>
+            <compilerArg>-gen</compilerArg>
+            <compilerArg>/mnt/CODE/TEMP</compilerArg>
+          </compilerArgs>
         </configuration>
       </plugin>
     </plugins>
