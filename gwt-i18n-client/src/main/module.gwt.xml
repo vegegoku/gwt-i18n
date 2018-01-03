@@ -23,22 +23,22 @@
 
   <!-- Browser-sensitive code should use the 'locale' client property. -->
   <!-- 'default' is always defined.                                    -->
-  <define-property name="locale" values="default" />
+  <define-property name="locale.new" values="default" />
 
   <!--
    - Configuration property defining the query parameter to use for the locale.
    - Valid values are any legal URL query parameter name.
    -->
-  <define-configuration-property name="locale.queryparam"
+  <define-configuration-property name="locale.new.queryparam"
                                  is-multi-valued="false"/>
-  <set-configuration-property name="locale.queryparam" value="locale"/>
+  <set-configuration-property name="locale.new.queryparam" value="locale.new"/>
 
   <!--
    - Configuration property defining the cookie to use for the locale.
    - Valid values are any legal cookie name.
    -->
-  <define-configuration-property name="locale.cookie" is-multi-valued="false"/>
-  <set-configuration-property name="locale.cookie" value=""/>
+  <define-configuration-property name="locale.new.cookie" is-multi-valued="false"/>
+  <set-configuration-property name="locale.new.cookie" value=""/>
 
   <!--
    - Configuration property controlling whether to use user agent info for
@@ -46,9 +46,9 @@
    - Valid values are (case insensitive): y/yes/n/no/true/false/on/off (others
    - are treated as no).
    -->
-  <define-configuration-property name="locale.useragent"
+  <define-configuration-property name="locale.new.useragent"
                                  is-multi-valued="false"/>
-  <set-configuration-property name="locale.useragent" value="N"/>
+  <set-configuration-property name="locale.new.useragent" value="N"/>
 
   <!--
    - Configuration controlling whether to look for locale information in meta
@@ -56,9 +56,9 @@
    - Valid values are (case insensitive): y/yes/n/no/true/false/on/off (others
    - are treated as no).
    -->
-  <define-configuration-property name="locale.usemeta"
+  <define-configuration-property name="locale.new.usemeta"
                                  is-multi-valued="false"/>
-  <set-configuration-property name="locale.usemeta" value="Y"/>
+  <set-configuration-property name="locale.new.usemeta" value="Y"/>
 
   <!--
    - Configuration property defining the order to search for a locale.
@@ -68,12 +68,12 @@
    -   * cookie
    -   * useragent
    -->
-  <define-configuration-property name="locale.searchorder"
+  <define-configuration-property name="locale.new.searchorder"
                                  is-multi-valued="false"/>
-  <set-configuration-property name="locale.searchorder"
+  <set-configuration-property name="locale.new.searchorder"
                               value="queryparam,cookie,meta,useragent"/>
 
-  <property-provider name="locale"
+  <property-provider name="locale.new"
                      generator="com.progressoft.brix.domino.i18n.linker.LocalePropertyProviderGenerator"/>
 
   <generate-with class="com.progressoft.brix.domino.i18n.rebind.LocalizableGenerator">
@@ -94,9 +94,9 @@
       the locale of the current permutation will actually be included.  Note
       that currently only number/date format constants, locale names, and
       currency data will support runtime locales - everything else will just
-      reference the compile-time locale set in the "locale" property.
+      reference the compile-time locale set in the "locale.new" property.
    -->
-  <define-configuration-property name="runtime.locales" is-multi-valued="true"/>
+  <define-configuration-property name="runtime.locales.new" is-multi-valued="true"/>
 
   <!--
       A "real" locale to be served by default (i.e. if the browser either
@@ -108,18 +108,18 @@
       "default" (because various tools expect that to be valid), but it will
       be generated as the locale specified here.
   -->
-  <set-property-fallback name="locale" value="default"/>
+  <set-property-fallback name="locale.new" value="default"/>
 
   <!-- Force BiDi policy to be enabled -->
-  <define-property name="gwt.forceBidi" values="true, false"/>
+  <define-property name="gwt.forceBidi.new" values="true, false"/>
 
   <!-- Default to not forced -->
-  <set-property name="gwt.forceBidi" value="false"/>
+  <set-property name="gwt.forceBidi.new" value="false"/>
 
   <!-- Replace the BidiPolicyImpl -->
   <replace-with class="com.progressoft.brix.domino.i18n.client.BidiPolicy.BidiPolicyImplOn">
     <when-type-is class="com.progressoft.brix.domino.i18n.client.BidiPolicy.BidiPolicyImpl"/>
-    <when-property-is name="gwt.forceBidi" value="true"/>
+    <when-property-is name="gwt.forceBidi.new" value="true"/>
   </replace-with>
 </module>
 

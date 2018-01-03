@@ -246,7 +246,7 @@ abstract class AbstractLocalizableImplCreator extends
             // fallbacks; "default" might be mapped to any real locale.
             try {
               SelectionProperty localeProp = context.getPropertyOracle()
-                  .getSelectionProperty(logger, "locale");
+                  .getSelectionProperty(logger, "locale.new");
               String defaultLocale = localeProp.getFallbackValue();
               if (defaultLocale.length() > 0) {
                 genLocale = defaultLocale;

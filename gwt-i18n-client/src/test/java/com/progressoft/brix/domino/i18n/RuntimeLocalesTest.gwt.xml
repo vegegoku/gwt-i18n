@@ -13,8 +13,8 @@
 <!-- limitations under the License.                                         -->
 
 <module>
-	<inherits name="com.progressoft.brix.domino.i18n.I18n"/>
-        <inherits name="com.progressoft.brix.domino.i18n.CldrLocales"/>
-	<extend-property name = "locale" values ="en,es,es_419"/>
-        <set-property name = "locale" value ="es_419"/>
- </module>
+    <inherits name="com.progressoft.brix.domino.i18n.I18n"/>
+    <inherits name="com.progressoft.brix.domino.i18n.CldrLocales"/>
+    <extend-property name="locale.new" values="en,es,es_419"/>
+    <set-property name="locale.new" value="es_419"/>
+</module>

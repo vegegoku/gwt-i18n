@@ -17,7 +17,7 @@ package com.progressoft.brix.domino.i18n.client.gen;
 
 /**
  * Interface to represent the constants contained in resource bundle:
- * 'com/google/gwt/i18n/client/gen/TestBadKeys.properties'.
+ * 'com/progressoft/brix/domino/i18n/client/gen/TestBadKeys.properties'.
  */
 public interface TestBadKeys extends
     com.progressoft.brix.domino.i18n.client.ConstantsWithLookup {

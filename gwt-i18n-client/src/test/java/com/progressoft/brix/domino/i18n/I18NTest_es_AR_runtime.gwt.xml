@@ -14,12 +14,12 @@
 
 <module>
 	<!-- Inherit the JUnit support -->
-	<inherits name='com.google.gwt.junit.JUnit'/>
+	<!--<inherits name='com.google.gwt.junit.JUnit'/>-->
 	<inherits name="com.progressoft.brix.domino.i18n.I18n"/>
 	<!-- Include client-side source for the test cases -->
 	<source path="client"/>
-	<extend-property name="locale" values="es_419"/>
-	<set-property name = "locale" value = "es_419"/>
-	<extend-configuration-property name="runtime.locales" value="es_AR"/>
-	<extend-configuration-property name="runtime.locales" value="es_MX"/>
+	<extend-property name="locale.new" values="es_419"/>
+	<set-property name = "locale.new" value = "es_419"/>
+	<extend-configuration-property name="runtime.locales.new" value="es_AR"/>
+	<extend-configuration-property name="runtime.locales.new" value="es_MX"/>
 </module>

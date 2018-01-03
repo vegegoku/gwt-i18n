@@ -17,7 +17,7 @@ package com.progressoft.brix.domino.i18n.client.gen;
 
 /**
  * Interface to represent the messages contained in resource bundle:
- * 'com/google/gwt/i18n/client/gen/SingleMessages.properties'.
+ * 'com/progressoft/brix/domino/i18n/client/gen/SingleMessages.properties'.
  */
 public interface SingleMessages extends com.progressoft.brix.domino.i18n.client.Messages {
 

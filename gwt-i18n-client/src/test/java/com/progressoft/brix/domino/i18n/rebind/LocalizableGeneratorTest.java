@@ -488,7 +488,7 @@ public class LocalizableGeneratorTest extends TestCase {
       if (LocaleUtils.PROP_LOCALE_COOKIE.equals(propertyName)) {
         value = "";
       } else if (LocaleUtils.PROP_LOCALE_QUERY_PARAM.equals(propertyName)) {
-        value = "locale";
+        value = "locale.new";
       } else if (LocaleUtils.PROP_RUNTIME_LOCALES.equals(propertyName)) {
         value = "en";
       } else {

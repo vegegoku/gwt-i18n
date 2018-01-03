@@ -16,6 +16,6 @@
 	<inherits name="com.progressoft.brix.domino.i18n.I18n"/>
 	<source path='resolutiontest' />
 	<source path = 'client'/>
-	<extend-property name = "locale" values ="piglatin,piglatin_UK, piglatin_UK_WINDOWS"/>
-	<set-property name="locale" value="piglatin_UK_WINDOWS" />
+	<extend-property name = "locale.new" values ="piglatin,piglatin_UK,piglatin_UK_WINDOWS"/>
+	<set-property name="locale.new" value="piglatin_UK_WINDOWS" />
  </module>

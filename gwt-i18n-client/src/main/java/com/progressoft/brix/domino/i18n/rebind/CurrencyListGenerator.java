@@ -54,7 +54,7 @@ import java.util.regex.Pattern;
  * Generator used to generate a localized version of CurrencyList, which contains the list of
  * currencies (with names, symbols, and other information) localized to the current locale.
  */
-@RunsLocal(requiresProperties = {"locale.queryparam", "locale", "runtime.locales", "locale.cookie"})
+@RunsLocal(requiresProperties = {"locale.new.queryparam", "locale.new", "runtime.locales.new", "locale.new.cookie"})
 public class CurrencyListGenerator extends Generator {
 
   /**
@@ -232,14 +232,14 @@ public class CurrencyListGenerator extends Generator {
    * locale.
    */
   private static final String CURRENCY_DATA_PREFIX =
-      "com/google/gwt/i18n/client/impl/cldr/CurrencyData";
+      "com/progressoft/brix/domino/i18n/client/impl/cldr/CurrencyData";
 
   /**
    * Prefix for properties files containing additional flags about currencies
    * each locale, which are not present in CLDR.
    */
   private static final String CURRENCY_EXTRA_PREFIX =
-      "com/google/gwt/i18n/client/constants/CurrencyExtra";
+      "com/progressoft/brix/domino/i18n/client/constants/CurrencyExtra";
 
   private static final String CURRENCY_LIST = CurrencyList.class.getCanonicalName();
 
@@ -253,7 +253,7 @@ public class CurrencyListGenerator extends Generator {
    * locale.
    */
   private static final String NUMBER_CONSTANTS_PREFIX =
-      "com/google/gwt/i18n/client/constants/NumberConstantsImpl";
+      "com/progressoft/brix/domino/i18n/client/constants/NumberConstantsImpl";
 
   /**
    * Backslash-escape any double quotes in the supplied string.

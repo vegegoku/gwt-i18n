@@ -42,27 +42,27 @@ public class LocaleUtils {
    * The token representing the locale property controlling Localization.
    */
   // @VisibleForTesting
-  static final String PROP_LOCALE = "locale";
+  static final String PROP_LOCALE = "locale.new";
 
   /**
    * The config property identifying the URL query parameter name to possibly get
    * the value of the locale property.
    */
   // @VisibleForTesting
-  static final String PROP_LOCALE_QUERY_PARAM = "locale.queryparam";
+  static final String PROP_LOCALE_QUERY_PARAM = "locale.new.queryparam";
 
   /**
    * The config property identifying the cookie name to possibly get the value
    * of the locale property.
    */
   // @VisibleForTesting
-  static final String PROP_LOCALE_COOKIE = "locale.cookie";
+  static final String PROP_LOCALE_COOKIE = "locale.new.cookie";
 
   /**
-   * The token representing the runtime.locales configuration property.
+   * The token representing the runtime.locales.new configuration property.
    */
   // @VisibleForTesting
-  static final String PROP_RUNTIME_LOCALES = "runtime.locales";
+  static final String PROP_RUNTIME_LOCALES = "runtime.locales.new";
 
   /**
    * Multiple generators need to access the shared cache state of

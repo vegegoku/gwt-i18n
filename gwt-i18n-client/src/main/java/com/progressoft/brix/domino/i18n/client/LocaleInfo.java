@@ -21,6 +21,8 @@ import com.progressoft.brix.domino.i18n.client.constants.NumberConstants;
 import com.progressoft.brix.domino.i18n.client.impl.CldrImpl;
 import com.progressoft.brix.domino.i18n.client.impl.LocaleInfoImpl;
 
+import java.util.logging.Logger;
+
 /**
  * Provides access to the currently-active locale and the list of available
  * locales.

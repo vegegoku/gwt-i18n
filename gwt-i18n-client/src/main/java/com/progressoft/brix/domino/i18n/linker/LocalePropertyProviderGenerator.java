@@ -26,19 +26,19 @@ import java.util.SortedSet;
 import java.util.regex.Pattern;
 
 /**
- * Generates a property provider implementation for the "locale" property.
+ * Generates a property provider implementation for the "locale.new" property.
  */
 public class LocalePropertyProviderGenerator implements PropertyProviderGenerator {
 
-  public static final String LOCALE_QUERYPARAM = "locale.queryparam";
+  public static final String LOCALE_QUERYPARAM = "locale.new.queryparam";
   
-  public static final String LOCALE_COOKIE = "locale.cookie";
+  public static final String LOCALE_COOKIE = "locale.new.cookie";
   
-  public static final String LOCALE_SEARCHORDER = "locale.searchorder";
+  public static final String LOCALE_SEARCHORDER = "locale.new.searchorder";
 
-  public static final String LOCALE_USEMETA = "locale.usemeta";
+  public static final String LOCALE_USEMETA = "locale.new.usemeta";
 
-  public static final String LOCALE_USERAGENT = "locale.useragent";
+  public static final String LOCALE_USERAGENT = "locale.new.useragent";
 
   protected static final Pattern COOKIE_PATTERN = Pattern.compile("^[A-Za-z][A-Za-z0-9_]*$");
 
@@ -152,7 +152,7 @@ public class LocalePropertyProviderGenerator implements PropertyProviderGenerato
     }
     body.println("if (!locale) {");
     body.indent();
-    body.println("locale = $wnd['__gwt_Locale'];");
+    body.println("locale.new = $wnd['__gwt_Locale'];");
     body.outdent();
     body.println("}");
     body.println("if (locale) {");
@@ -195,14 +195,14 @@ public class LocalePropertyProviderGenerator implements PropertyProviderGenerato
     body.println("end = cookies.length;");
     body.outdent();
     body.println("}");
-    body.println("locale = cookies.substring(idx + " + (cookieName.length() + 1)
+    body.println("locale.new = cookies.substring(idx + " + (cookieName.length() + 1)
         + ", end);");
     body.outdent();
     body.println("}");
   }
 
   /**
-   * Generate JS code that takes the value of the "locale" variable and finds
+   * Generate JS code that takes the value of the "locale.new" variable and finds
    * parent locales until the value is a supported locale or the default locale.
    * 
    * @param logger logger to use
@@ -211,16 +211,16 @@ public class LocalePropertyProviderGenerator implements PropertyProviderGenerato
    */
   protected void generateInheritanceLookup(TreeLogger logger, SourceWriter body)
       throws UnableToCompleteException  {
-    body.println("while (locale && !__gwt_isKnownPropertyValue(\"locale\", locale)) {");
+    body.println("while (locale && !__gwt_isKnownPropertyValue(\"locale.new\", locale)) {");
     body.indent();
     body.println("var lastIndex = locale.lastIndexOf(\"_\");");
     body.println("if (lastIndex < 0) {");
     body.indent();
-    body.println("locale = null;");
+    body.println("locale.new = null;");
     body.println("break;");
     body.outdent();
     body.println("}");
-    body.println("locale = locale.substring(0, lastIndex);");
+    body.println("locale.new = locale.substring(0, lastIndex);");
     body.outdent();
     body.println("}");
   }
@@ -235,7 +235,7 @@ public class LocalePropertyProviderGenerator implements PropertyProviderGenerato
   protected void generateMetaLookup(TreeLogger logger, SourceWriter body)
       throws UnableToCompleteException  {
     // TODO(jat): do we want to allow customizing the meta property name?
-    body.println("locale = __gwt_getMetaProperty(\"locale\");");
+    body.println("locale.new = __gwt_getMetaProperty(\"locale.new\");");
   }
 
   /**
@@ -260,7 +260,7 @@ public class LocalePropertyProviderGenerator implements PropertyProviderGenerato
     body.println("end = queryParam.length;");
     body.outdent();
     body.println("}");
-    body.println("locale = queryParam.substring(qpStart + "
+    body.println("locale.new = queryParam.substring(qpStart + "
         + (queryParam.length() + 1) + ", end);");
     body.outdent();
     body.println("}");
@@ -286,7 +286,7 @@ public class LocalePropertyProviderGenerator implements PropertyProviderGenerato
     body.println("parts[1] = parts[1].toUpperCase();");
     body.outdent();
     body.println("}");
-    body.println("locale = parts.join(\"_\");");
+    body.println("locale.new = parts.join(\"_\");");
     body.outdent();
     body.println("}");
   }

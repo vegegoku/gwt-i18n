@@ -21,7 +21,7 @@ import java.util.Map;
 
 /**
  * Interface to represent the contents of resourcePattern bundle
- * com/google/gwt/i18n/client/TestConstants.properties.
+ * com/progressoft/brix/domino/i18n/client/TestConstants.properties.
  */
 @Generate(format = "com.progressoft.brix.domino.i18n.server.PropertyCatalogFactory")
 public interface TestConstants extends com.progressoft.brix.domino.i18n.client.Constants {

@@ -43,7 +43,7 @@ public class LocaleInfo_en_Test extends GWTTestCase {
 
   public void testCookieName() {
     String cookieName = LocaleInfo.getCurrentLocale().getLocaleCookieName();
-    assertEquals("LOCALE", cookieName);
+    assertEquals("locale.new", cookieName);
   }
 
   public void testQueryParam() {

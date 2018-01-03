@@ -17,6 +17,8 @@ package com.progressoft.brix.domino.i18n.client;
 
 import com.google.gwt.junit.client.GWTTestCase;
 
+import java.util.logging.Logger;
+
 /**
  * Tests the LocaleInfo class and the associated generator.
  */
@@ -55,7 +57,7 @@ public class LocaleInfoTest extends GWTTestCase {
 
   public void testQueryParam() {
     String queryParam = LocaleInfo.getCurrentLocale().getLocaleQueryParam();
-    assertEquals("locale", queryParam);
+    assertEquals("locale.new", queryParam);
   }
   
   public void testRTL() {

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.progressoft.birx.domino</groupId>
+    <groupId>com.progressoft.brix.domino</groupId>
     <artifactId>gwt-i18n</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>

@@ -52,7 +52,7 @@ import java.util.TreeSet;
  * Generator used to bind classes extending the <code>Localizable</code> and
  * <code>Constants</code> interfaces.
  */
-@RunsLocal(requiresProperties = {"locale.queryparam", "locale", "runtime.locales", "locale.cookie"})
+@RunsLocal(requiresProperties = {"locale.new.queryparam", "locale.new", "runtime.locales.new", "locale.new.cookie"})
 public class LocalizableGenerator extends Generator {
 
   /**

@@ -51,26 +51,26 @@ import java.util.Set;
  * Generator used to generate an implementation of the LocaleInfoImpl class, which is used by the
  * LocaleInfo class.
  */
-@RunsLocal(requiresProperties = {"locale.queryparam", "locale", "runtime.locales", "locale.cookie"})
+@RunsLocal(requiresProperties = {"locale.new.queryparam", "locale.new", "runtime.locales.new", "locale.new.cookie"})
 public class LocaleInfoGenerator extends Generator {
 
   /**
    * Properties file containing machine-generated locale display names, in their
    * native locales (if possible).
    */
-  private static final String GENERATED_LOCALE_NATIVE_DISPLAY_NAMES = "com/google/gwt/i18n/client/impl/cldr/LocaleNativeDisplayNames-generated.properties";
+  private static final String GENERATED_LOCALE_NATIVE_DISPLAY_NAMES = "com/progressoft/brix/domino/i18n/client/impl/cldr/LocaleNativeDisplayNames-generated.properties";
 
   /**
    * Properties file containing hand-made corrections to the machine-generated
    * locale display names above.
    */
-  private static final String MANUAL_LOCALE_NATIVE_DISPLAY_NAMES = "com/google/gwt/i18n/client/impl/cldr/LocaleNativeDisplayNames-manual.properties";
+  private static final String MANUAL_LOCALE_NATIVE_DISPLAY_NAMES = "com/progressoft/brix/domino/i18n/client/impl/cldr/LocaleNativeDisplayNames-manual.properties";
 
   /**
    * Properties file containing hand-made overrides of locale display names, in
    * their native locales (if possible).
    */
-  private static final String OVERRIDE_LOCALE_NATIVE_DISPLAY_NAMES = "com/google/gwt/i18n/client/impl/cldr/LocaleNativeDisplayNames-override.properties";
+  private static final String OVERRIDE_LOCALE_NATIVE_DISPLAY_NAMES = "com/progressoft/brix/domino/i18n/client/impl/cldr/LocaleNativeDisplayNames-override.properties";
 
   /**
    * Set of canonical language codes which are RTL.

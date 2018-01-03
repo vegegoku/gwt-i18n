@@ -14,6 +14,6 @@
 
 <module>
   <inherits name="com.progressoft.brix.domino.i18n.I18n"/>
-  <extend-property name="locale" values="en"/>
-  <set-property name="locale" value="en" />
+  <extend-property name="locale.new" values="en"/>
+  <set-property name="locale.new" value="en" />
 </module>

@@ -19,7 +19,7 @@ import com.google.gwt.safehtml.shared.SafeHtml;
 
 /**
  * Interface to represent the messages contained in resource bundle:
- * 'com/google/gwt/i18n/client/gen/TestMessages.properties'.
+ * 'com/progressoft/brix/domino/i18n/client/gen/TestMessages.properties'.
  */
 public interface TestMessages extends com.progressoft.brix.domino.i18n.client.Messages {
 

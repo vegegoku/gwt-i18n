@@ -14,10 +14,10 @@
 
 <module>
 	<!-- Inherit the JUnit support -->
-	<inherits name='com.google.gwt.junit.JUnit'/>
+	<!--<inherits name='com.google.gwt.junit.JUnit'/>-->
 	<inherits name="com.progressoft.brix.domino.i18n.I18n"/>
 	<!-- Include client-side source for the test cases -->
 	<source path="client"/>
-	<extend-property name="locale" values="pa_Arab"/>
-	<set-property name="locale" value="pa_Arab"/>
+	<extend-property name="locale.new" values="pa_Arab"/>
+	<set-property name="locale.new" value="pa_Arab"/>
 </module>

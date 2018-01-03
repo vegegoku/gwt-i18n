@@ -78,7 +78,7 @@ package com.progressoft.brix.domino.i18n.shared;
  * To specify the <code>locale</code> client property using a meta tag in the
  * host HTML, use <code>gwt:property</code> as follows:
  * 
- * <pre>&lt;meta name="gwt:property" content="locale=x_Y"&gt;</pre>
+ * <pre>&lt;meta name="gwt:property" content="locale.new=x_Y"&gt;</pre>
  * 
  * For example, the following host HTML page sets the locale to "ja_JP":
  * 

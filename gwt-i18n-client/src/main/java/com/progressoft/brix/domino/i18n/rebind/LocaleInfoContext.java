@@ -38,10 +38,10 @@ public class LocaleInfoContext {
     /**
      * Create a key for cache lookup.
      * 
-     * @param localeProperty "locale" property, must not be null
-     * @param runtimeLocaleProperty "runtime.locales" property, must not be null
-     * @param cookieProperty "locale.queryparam" property, must not be null
-     * @param queryParamProperty "locale.cookie" property, must not be null
+     * @param localeProperty "locale.new" property, must not be null
+     * @param runtimeLocaleProperty "runtime.locales.new" property, must not be null
+     * @param cookieProperty "locale.new.queryparam" property, must not be null
+     * @param queryParamProperty "locale.new.cookie" property, must not be null
      */
     public CacheKey(SelectionProperty localeProperty,
         ConfigurationProperty runtimeLocaleProperty,
