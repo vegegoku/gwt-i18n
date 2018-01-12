@@ -47,7 +47,7 @@
         <groupId>net.ltgt.gwt.maven</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
         <configuration>
-          <moduleName>com.progressoft.brix.domino.i18n.I18n</moduleName>
+          <moduleName>org.gwtproject.i18n.I18n</moduleName>
           <moduleShortName>gwti18n</moduleShortName>
           <!--<skipTests>true</skipTests>-->
           <useCompilerArgsForTests>true</useCompilerArgsForTests>

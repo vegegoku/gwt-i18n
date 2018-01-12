@@ -18,8 +18,8 @@ package com.google.gwt.user.rebind;
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.UnableToCompleteException;
 import com.google.gwt.core.ext.typeinfo.JMethod;
-import com.progressoft.brix.domino.i18n.rebind.AbstractResource.ResourceList;
-import com.progressoft.brix.domino.i18n.shared.GwtLocale;
+import org.gwtproject.i18n.rebind.AbstractResource.ResourceList;
+import org.gwtproject.i18n.shared.GwtLocale;
 import com.google.gwt.user.rebind.AbstractGeneratorClassCreator;
 import com.google.gwt.user.rebind.AbstractSourceCreator;
 

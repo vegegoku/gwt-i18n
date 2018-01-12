@@ -18,9 +18,9 @@ package com.google.gwt.user.rebind;
 import com.google.gwt.core.ext.TreeLogger;
 import com.google.gwt.core.ext.UnableToCompleteException;
 import com.google.gwt.core.ext.typeinfo.*;
-import com.progressoft.brix.domino.i18n.rebind.AbstractResource;
-import com.progressoft.brix.domino.i18n.rebind.AbstractResource.MissingResourceException;
-import com.progressoft.brix.domino.i18n.shared.GwtLocale;
+import org.gwtproject.i18n.rebind.AbstractResource;
+import org.gwtproject.i18n.rebind.AbstractResource.MissingResourceException;
+import org.gwtproject.i18n.shared.GwtLocale;
 
 import java.util.*;
 
